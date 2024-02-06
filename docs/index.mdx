@@ -1,0 +1,28 @@
+---
+title: "Introduction"
+---
+
+Hanabi.rest is a platform where you simply input an overview of your application and AI generates API documentation, automatically constructs REST API code based on Hono.js that operates in a multi-runtime environment, and SQL. It enables the testing of endpoints connected to a database in a sandboxed environment on a browser and the execution of SQL securely.
+
+## Why Choose Hono?
+
+Firstly, Hono.js operates within a single file, making it highly compatible with code generation using large-scale language models. Furthermore, its versatility is evident as it functions across multiple runtimes, including Cloudflare, Fastly, Deno, Bun, Lagon, AWS, and Node.js.
+
+Additionally, Hono is optimized for web standards and Edge computing, which makes it ideal for testing API functionalities directly in a browser.
+
+<LinkCard href="https://hono.dev/" /> 
+
+## What is edge computing?
+
+Edge computing refers to the practice of processing data near the location where it is generated, or at the "edge" of the network. This approach minimizes reliance on data centers or cloud servers, enhancing real-time data processing and responsiveness, while reducing bandwidth usage. In the context of web development, edge computing enables the execution of applications and services closer to the end-user, significantly improving response times and user experience. Technologies like [Cloudflare Workers](https://arc.net/l/quote/ktbjvpos) exemplify edge computing by running code across a distributed network of servers, thereby optimizing application performance and scalability.
+
+## Automatic loading of npm packages
+
+The import statements in the index.ts file are automatically analyzed, reading package information registered in npm and reflecting type definitions as well.
+
+
+![OpenAI package type](/docs/npm.png)
+
+## Environment Variables
+
+Please register API keys and other values that should not be public as environment variables. These variables are stored only in the local environment and will not be made public.
